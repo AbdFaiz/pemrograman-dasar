@@ -1,4 +1,4 @@
-program Praktikum4;
+program IfLulus;
 
 uses crt;
 
