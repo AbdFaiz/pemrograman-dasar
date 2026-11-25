@@ -2,10 +2,12 @@ program ContohRepeatSederhana;
 uses crt;
 
 var
-  i: integer;
+  i, n: integer;
 
 begin
   clrscr;
+  write('Input Nilai = ');
+  read(n);
 
   i := 1;
 
@@ -13,7 +15,7 @@ begin
     writeln('Angka ke-', i);
 
     i := i + 1;
-  until (i > 5); 
+  until (i > n); 
 
   writeln('Perulangan selesai.');
   readln;

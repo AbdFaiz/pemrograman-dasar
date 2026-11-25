@@ -4,6 +4,10 @@ uses crt;
 var
   n, i, count: integer;
 
+const 
+  mod1 = 2;
+  mod2 = 3;
+
 begin
   clrscr;
 
@@ -13,22 +17,19 @@ begin
   i := n;
   count := 0;
 
-  { Perulangan menampilkan deret bilangan menurun dari n ke 1 }
-  while (i >= 1) do
-  begin
+  repeat
     write(i, ' ');
 
-    { Mengecek apakah angka merupakan kelipatan 3 atau 5 }
-    if (i mod 3 = 0) or (i mod 5 = 0) then
+    if (i mod mod1 = 0) or (i mod mod2 = 0) then
     begin
       count := count + 1;
     end;
 
     i := i - 1;
-  end;
+  until(i = 0);
 
   writeln;
-  writeln('Jumlah angka kelipatan 3 atau 5 sebanyak ', count, ' angka');
+  writeln('Jumlah angka kelipatan ', mod1, ' atau ', mod2, ' sebanyak ', count, ' angka');
 
   readln;
 end.

@@ -21,7 +21,7 @@ begin
   else if (x > 0) and (y < 0) then
     writeln('Titik (', x, ',', y, ') berada di Kuadran IV')
   else
-    writeln('Titik (', x, ',', y, ') berada pada sumbu koordinat / titik pusat');
+    writeln('Titik (', x, ',', y, ') berada pada titik pusat');
 
   readln;
 end.
